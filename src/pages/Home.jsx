@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import MovieCard from "../components/MovieCard";
 import "../css/Home.css";
 import { getPopularMovies, searchMovies } from "../services/api";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faMagnifyingGlass} from '@fortawesome/free-solid-svg-icons'
 
 const Home = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -57,7 +59,7 @@ const Home = () => {
           onChange={(e) => setSearchQuery(e.target.value)}
         />
         <button type="submit" className="search-button">
-          Search
+        <FontAwesomeIcon className="mag-icon" icon={faMagnifyingGlass} />
         </button>
       </form>
 
