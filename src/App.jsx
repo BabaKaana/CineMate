@@ -1,6 +1,6 @@
 import Home from './pages/Home'
 import Favourites from './pages/Favourites'
-import {createBrowserRouter, RouterProvider, Outlet} from 'react-router-dom'
+import {createBrowserRouter, RouterProvider, Outlet, createHashRouter} from 'react-router-dom'
 import Navbar from './components/Navbar'
 import './css/App.css'
 import { MovieProvider } from './context/MovieContext'
@@ -12,7 +12,7 @@ const Layout = () => (
   </>
 )
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: '/',
     element: <Layout />,
