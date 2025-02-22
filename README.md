@@ -1,1 +1,1 @@
-## LIVE-URL: [https://babakaana.github.io/CineMate/#/]
+## LIVE-URL: https://babakaana.github.io/CineMate/#/
